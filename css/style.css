@@ -103,10 +103,9 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
-    min-height: 50px;
 }
 
-.top, span {
+.top a, span {
     font-weight: 700;
     font-size: 0.8rem;
     text-align: center;
@@ -199,7 +198,7 @@ footer {
     }
 
     .top {
-        visibility: hidden;
+        display: none;
     }
 
     .bot-ul {
@@ -218,7 +217,15 @@ footer {
     .bot-ul li {
         padding-top: 0px;
         padding-bottom: 0px;
+        min-height: 18px;
+        width: 115px;
+        margin-bottom: 0px;
     }
+
+    span, .bot-ul li a {
+        font-size: 0.8rem;
+    }
+
 
 }
 @media screen and (min-width:1024px) /* Desktop */ {
